@@ -37,6 +37,9 @@ body {
   text-decoration: none;
 }
 
+.a .logo {
+  display: inline-block;
+}
 .logo-accent {
   color: var(--accent);
 }
@@ -64,7 +67,13 @@ ul {
 .site-nav .link.current {
   color: var(--accent);
 }
-
+.nav {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*герой*/
 .hero {
   text-align: center;
@@ -88,6 +97,14 @@ ul {
 }
 
 /*section*/
+.section .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -115,6 +132,10 @@ ul {
 
 .button {
   display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
   color: var(--second-text-accent);
   background-color: var(--accent);
   padding-top: 10px;
@@ -123,14 +144,51 @@ ul {
   padding-right: 32px;
   border: 1px solid tansparent;
   border-radius: 4px;
+  min-width: 200px;
 }
 
 .button:hover,
 .button:focus {
-  background-color: ;var(--background-color);
+  background-color: var(--background-color);
   color: var(--accent);
 }
 
+/*section our advantages*/
+.our-advantages .title {
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.our-advantages .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.our-advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.our-advantages .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*section our-team*/
+
+.our-team .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*фильтр*/
 
 .filter {
@@ -141,6 +199,7 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 1px solid tansparent;
 }
 
 .filter:hover {
@@ -184,6 +243,13 @@ ul {
   color: var(--accent);
 }
 
+.contacts {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* our projects */
 .project-name {
   color: #212121;
