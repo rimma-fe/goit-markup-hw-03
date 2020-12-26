@@ -56,7 +56,7 @@ ul {
 
 /* Site nav*/
 .site-nav .link {
-  display: inline-block;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
@@ -82,13 +82,13 @@ ul {
   margin-bottom: 0;
 }
 
-/*.site-nav .item:not(:last-child) {
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
-}*/
-
-.site-nav .item + .item {
-  margin-left: 50px;
 }
+
+/*.site-nav .item + .item {
+  margin-left: 50px;
+}*/
 
 .nav {
   padding-left: 15px;
