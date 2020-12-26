@@ -57,6 +57,8 @@ ul {
 /* Site nav*/
 .site-nav .link {
   display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
