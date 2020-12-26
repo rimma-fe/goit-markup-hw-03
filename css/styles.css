@@ -75,9 +75,15 @@ ul {
 }
 
 .site-nav {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.site-nav li {
+  outline: 2px solid tomato;
+}
+
 .nav {
   padding-left: 15px;
   padding-right: 15px;
