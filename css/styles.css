@@ -7,8 +7,10 @@
   --sec-background-color: #2f303a;
   --third-background-color: #f5f4fa;
   --logo-color: #000000;
+  --filter-color: #f5f4fa;
 }
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   сolor: var(--primary-text-color);
 
@@ -39,6 +41,7 @@ body {
 
 .a .logo {
   display: inline-block;
+  padding-top: 60px;
 }
 .logo-accent {
   color: var(--accent);
@@ -46,11 +49,14 @@ body {
 
 /*убирает точки со всех списков*/
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 /* Site nav*/
 .site-nav .link {
+  display: inline-block;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -67,6 +73,11 @@ ul {
 .site-nav .link.current {
   color: var(--accent);
 }
+
+.site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .nav {
   padding-left: 15px;
   padding-right: 15px;
@@ -74,8 +85,23 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+
+.header .container {
+  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*герой*/
 .hero {
+  outline: 2px solid tomato;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
   padding-top: 200px;
   padding-left: 452px;
@@ -106,6 +132,8 @@ ul {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -145,6 +173,8 @@ ul {
   border: 1px solid tansparent;
   border-radius: 4px;
   min-width: 200px;
+  cursor: pointer;
+  outline: transparent;
 }
 
 .button:hover,
@@ -166,10 +196,12 @@ ul {
 }
 
 .our-advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
+  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .our-advantages .container {
@@ -178,6 +210,15 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+/*our duties*/
+.our-duties {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 /*section our-team*/
@@ -188,26 +229,13 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-/*фильтр*/
-
-.filter {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: 1px solid tansparent;
-}
-
-.filter:hover {
-  background-color: var(--accent);
+  outline: 2px solid tomato;
 }
 
 /*our team */
 .name {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -216,6 +244,8 @@ ul {
 }
 
 .profession {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -230,6 +260,8 @@ ul {
   color: var(--second-text-accent);
 }
 .contacts .link {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -243,15 +275,68 @@ ul {
   color: var(--accent);
 }
 
-.contacts {
+.ul .contacts {
+  background-color: tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mail {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* our projects */
+
+/*фильтр*/
+
+.filter {
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-color: var(--filter-color);
+  background-color: var(--filter-color);
+  cursor: pointer;
+}
+
+.filter:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.our-projects .container {
+  outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* our projects */
+
+.project-examples {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .project-name {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -261,6 +346,8 @@ ul {
 }
 
 .project-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1, 9;
   text-decoration: none;
@@ -270,8 +357,14 @@ ul {
 }
 
 footer {
+  outline: 2px solid tomato;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  padding-right: 215px;
   background-color: var(--sec-background-color);
 }
+
 .email,
 .phone {
   color: rgba(255, 255, 255, 0.6);
