@@ -29,8 +29,14 @@ body {
 /*background-color 2F303A */
 /*background-colorFFFFFF*/
 
+/*header-main-container*/
+.main-container {
+  display: flex;
+  align-items: center;
+}
 /*logo*/
 .logo {
+  display: inline-block;
   color: var(--logo-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -47,6 +53,13 @@ body {
   color: var(--accent);
 }
 
+.main-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container .logo-nav {
+  display: flex;
+}
 /*убирает точки со всех списков*/
 ul {
   padding: 0;
@@ -80,6 +93,7 @@ ul {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -96,6 +110,17 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo-nav {
+  display: inline-block;
+  margin-right: 93px;
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .header .container {
@@ -273,6 +298,7 @@ ul {
   color: var(--second-text-accent);
 }
 .contacts .link {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-text-color);
@@ -289,6 +315,8 @@ ul {
 }
 
 .ul .contacts {
+  display: flex;
+  align-items: center;
   background-color: tomato;
   padding-left: 15px;
   padding-right: 15px;
@@ -297,14 +325,27 @@ ul {
   margin-bottom: 0;
 }
 
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
 .mail {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-top: 0;
   margin-bottom: 0;
+
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .tel {
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* our projects */
 
@@ -378,9 +419,10 @@ footer {
   background-color: var(--sec-background-color);
 }
 
-footer .logo {
+.header .logo {
   display: inline-block;
-  margin-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .email,
