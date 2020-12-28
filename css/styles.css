@@ -208,10 +208,19 @@ ul {
   line-height: 1.17;
 }
 
-.feature-list {
+.features-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
+
+.features-list-item {
+  width: 270px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /*кнопка заказать услугу*/
 
 .button {
@@ -275,6 +284,18 @@ ul {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+}
+.our-duties-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-basis: calc(100% / 3-30px);
+}
+
+.duties-item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /*section our-team*/
@@ -379,6 +400,14 @@ ul {
 }*/
 
 /* our projects */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 /*фильтр*/
 
