@@ -33,6 +33,12 @@ body {
 .main-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*logo*/
 .logo {
@@ -53,10 +59,10 @@ body {
   color: var(--accent);
 }
 
-.main-container {
+/*.main-container {
   display: flex;
   align-items: center;
-}
+}*/
 .logo-container .logo-nav {
   display: flex;
 }
@@ -68,7 +74,14 @@ ul {
 }
 
 /* Site nav*/
-.site-nav .link {
+
+/*.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
+
+.site-nav-list .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -80,23 +93,23 @@ ul {
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-list .link:hover,
+.site-nav-list .link:focus {
   color: var(--accent);
 }
 
-.site-nav .link.current {
+.site-nav-list .link.current {
   color: var(--accent);
 }
 
-.site-nav {
+.site-nav-list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav-list .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -314,7 +327,7 @@ ul {
   color: var(--accent);
 }
 
-.ul .contacts {
+.contacts {
   display: flex;
   align-items: center;
   background-color: tomato;
@@ -329,7 +342,7 @@ ul {
   margin-left: 50px;
 }
 
-.mail {
+/*.mail {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -346,11 +359,15 @@ ul {
   margin-bottom: 0;
   padding-top: 32px;
   padding-bottom: 32px;
-}
+}*/
+
 /* our projects */
 
 /*фильтр*/
 
+.projects-filter {
+  display: flex;
+}
 .filter {
   padding: 6px 22px;
   border-radius: 4px;
@@ -370,7 +387,7 @@ ul {
   background-color: var(--accent);
   border-color: var(--accent);
 }
-
+/*project-set*/
 .our-projects .container {
   outline: 2px solid tomato;
   padding-left: 15px;
@@ -380,14 +397,18 @@ ul {
   margin-right: auto;
 }
 
-.project-examples {
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.project-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
+.project-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc (100%/3 - 30px);
+}
 .project-name {
   margin-top: 0;
   margin-bottom: 0;
