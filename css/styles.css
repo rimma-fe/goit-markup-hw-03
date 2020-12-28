@@ -63,9 +63,7 @@ body {
   display: flex;
   align-items: center;
 }*/
-.logo-container .logo-nav {
-  display: flex;
-}
+
 /*убирает точки со всех списков*/
 ul {
   padding: 0;
@@ -80,7 +78,10 @@ ul {
   align-items: center;
   justify-content: space-between;
 }*/
-
+.all-nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav-list .link {
   display: block;
   padding-top: 32px;
@@ -106,7 +107,6 @@ ul {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 93px;
 }
 
 .site-nav-list .item:not(:last-child) {
@@ -117,13 +117,13 @@ ul {
   margin-left: 50px;
 }*/
 
-.nav {
+/*.nav {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .logo-nav {
   display: inline-block;
@@ -333,7 +333,6 @@ ul {
   background-color: tomato;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   margin-top: 0;
   margin-bottom: 0;
 }
