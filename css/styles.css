@@ -431,10 +431,23 @@ ul {
 
 /*фильтр*/
 
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .projects-filter {
   display: flex;
+  text-align: center;
+  justify-content: center;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*.our-projects .container {
+  align-items: center;
+}*/
+
 .filter {
   padding: 6px 22px;
   border-radius: 4px;
