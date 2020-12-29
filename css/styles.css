@@ -153,7 +153,7 @@ ul {
 .hero {
   outline: 2px solid tomato;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   text-align: center;
   padding-top: 200px;
   padding-left: 452px;
@@ -334,12 +334,15 @@ ul {
   margin-top: 30px;
   background-color: var(--background-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*our team */
 .name {
   margin-top: 0;
   margin-bottom: 10px;
+  padding-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -350,6 +353,7 @@ ul {
 .profession {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -358,6 +362,7 @@ ul {
 
 /*contacts*/
 .address {
+  margin-top: 20px;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
@@ -428,6 +433,7 @@ ul {
 
 .projects-filter {
   display: flex;
+  margin-bottom: 30px;
 }
 .filter {
   padding: 6px 22px;
@@ -497,8 +503,17 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 215px;
-  padding-right: 215px;
+  padding-right: 215pxpx;
   background-color: var(--sec-background-color);
+}
+
+footer .container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
 }
 
 .header .logo {
