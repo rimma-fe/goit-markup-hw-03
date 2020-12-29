@@ -219,6 +219,7 @@ ul {
   width: 270px;
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc(100% / 4-30px);
 }
 
 /*кнопка заказать услугу*/
@@ -249,11 +250,11 @@ ul {
 }
 
 /*section our advantages*/
-.our-advantages .title {
+/*.our-advantages .title {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 10px;
-}
+}*/
 
 .our-advantages .text {
   margin-top: 0;
@@ -308,6 +309,11 @@ ul {
   margin-right: auto;
   outline: 2px solid tomato;
 }
+
+.our-team {
+  background-color: var(--filter-color);
+}
+
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
@@ -319,6 +325,7 @@ ul {
 .team-member {
   margin-left: 30px;
   margin-top: 30px;
+  background-color: var(--background-color);
 }
 
 /*our team */
