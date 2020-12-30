@@ -394,6 +394,8 @@ ul {
   padding-right: 15px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts .item + .item {
