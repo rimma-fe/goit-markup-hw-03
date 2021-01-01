@@ -156,8 +156,8 @@ ul {
   margin-bottom: 30px;
   text-align: center;
   padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  /*padding-left: 452px;
+  padding-right: 452px;*/
   padding-bottom: 200px;
   background-color: var(--sec-background-color);
   color: var(--second-text-accent);
