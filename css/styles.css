@@ -487,15 +487,24 @@ ul {
 }
 
 .project-item {
+  width: 370px;
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc (100%/3 - 30px);
   border: 1px solid #eeeeee;
 }
 
+.card-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .project-name {
   margin-top: 0;
   margin-bottom: 0;
+
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -507,6 +516,7 @@ ul {
 .project-text {
   margin-top: 0;
   margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1, 9;
   text-decoration: none;
