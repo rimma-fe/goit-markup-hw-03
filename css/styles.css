@@ -30,6 +30,11 @@ body {
 /*background-colorFFFFFF*/
 
 /*header-main-container*/
+
+.header-info {
+  border: 1px solid #ececec;
+}
+
 .main-container {
   display: flex;
   align-items: center;
@@ -39,6 +44,7 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  /*border-bottom: tomato;*/
 }
 /*logo*/
 .logo {
@@ -153,7 +159,7 @@ ul {
 .hero {
   outline: 2px solid tomato;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-align: center;
   padding-top: 200px;
   /*padding-left: 452px;
@@ -213,8 +219,8 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  /*padding-bottom: 94px;
+  padding-top: 94px;*/
 }
 
 .features-list-item {
@@ -264,12 +270,14 @@ ul {
 }
 
 .our-advantages {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-advantages .container {
@@ -283,6 +291,7 @@ ul {
 .our-duties {
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 94px;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -293,7 +302,7 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding-bottom: 99px;
+  /*padding-bottom: 99px;*/
   flex-basis: calc(100% / 3-30px);
 }
 
@@ -315,6 +324,7 @@ ul {
 
 .our-team {
   background-color: var(--filter-color);
+  padding-bottom: 94px;
 }
 
 .our-team-list {
@@ -323,11 +333,11 @@ ul {
   margin-left: -30px;
   margin-top: -30px;
   flex-basis: (100%/4-30px);
-  padding-bottom: 94px;
+  /*padding-bottom: 94px;*/
 }
 
 .our-team .section-title {
-  padding-top: 94px;
+  /*padding-top: 94px;*/
 }
 .team-member {
   margin-left: 30px;
@@ -477,6 +487,11 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.our-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .project-set {
