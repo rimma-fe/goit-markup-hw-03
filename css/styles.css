@@ -529,8 +529,8 @@ footer {
   outline: 2px solid tomato;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
-  padding-right: 215pxpx;
+  /*padding-left: 215px;
+  padding-right: 215pxpx;*/
   background-color: var(--sec-background-color);
 }
 
