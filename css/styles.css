@@ -31,7 +31,16 @@ body {
 
 /*header-main-container*/
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header-info {
+  /*display: flex;*/
   border: 1px solid #ececec;
 }
 
@@ -46,6 +55,7 @@ body {
   margin-right: auto;
   /*border-bottom: tomato;*/
 }
+
 /*logo*/
 .logo {
   display: inline-block;
@@ -88,6 +98,7 @@ ul {
 .all-nav {
   display: flex;
   align-items: center;
+  /*justify-content: space-between;*/
 }
 .site-nav-list .link {
   display: block;
@@ -211,12 +222,13 @@ ul {
 
 .features-list .text {
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.71;
+  color: var(--primary-text-color);
 }
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   margin-left: -30px;
   margin-top: -30px;
   /*padding-bottom: 94px;
@@ -289,17 +301,12 @@ ul {
 }
 /*our duties*/
 .our-duties {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-bottom: 94px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   outline: 2px solid tomato;
 }
 .our-duties-list {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   margin-left: -30px;
   margin-top: -30px;
   /*padding-bottom: 99px;*/
@@ -451,7 +458,10 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  /*margin-bottom: 50px;*/
+  margin-bottom: 15px;
+  padding-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -497,18 +507,23 @@ ul {
 .project-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  /*margin-left: -30px;
+  margin-top: -30px;*/
+  margin: -15px;
 }
 
 .project-item {
   width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc (100%/3 - 30px);
+  /*margin-left: 30px;
+  margin-top: 30px;*/
+  margin: 15px;
+  /*flex-basis: calc ((100%-60px)/3);*/
   border: 1px solid #eeeeee;
 }
 
+/*.project-item:nth-child(3n) {
+  margin-right: 0px;
+}*/
 .card-body {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -558,6 +573,10 @@ footer .container {
   text-align: start;
 }
 
+footer .logo {
+  color: white;
+}
+
 .header .logo {
   display: inline-block;
   padding-top: 24px;
@@ -571,6 +590,9 @@ footer .container {
   line-height: 1.71;
   text-decoration: none;
 }
-.email {
+/*.email {
+  margin-bottom: 9px;
+}*/
+.email-li {
   margin-bottom: 9px;
 }
