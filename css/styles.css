@@ -76,11 +76,6 @@ body {
   color: var(--accent);
 }
 
-/*.main-container {
-  display: flex;
-  align-items: center;
-}*/
-
 /*убирает точки со всех списков*/
 ul {
   padding: 0;
@@ -90,11 +85,6 @@ ul {
 
 /* Site nav*/
 
-/*.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}*/
 .all-nav {
   display: flex;
   align-items: center;
@@ -131,18 +121,6 @@ ul {
 .site-nav-list .item:not(:last-child) {
   margin-right: 50px;
 }
-
-/*.site-nav .item + .item {
-  margin-left: 50px;
-}*/
-
-/*.nav {
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 .logo-nav {
   display: inline-block;
@@ -203,6 +181,7 @@ ul {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
+  padding-top: 94px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -269,25 +248,12 @@ ul {
   color: var(--accent);
 }
 
-/*section our advantages*/
-/*.our-advantages .title {
-  color: var(--title-text-color);
-  margin-top: 0;
-  margin-bottom: 10px;
-}*/
-
 .our-advantages .text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .our-advantages {
-  /* outline: 2px solid tomato;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;*/
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -309,7 +275,6 @@ ul {
   /*flex-wrap: wrap;*/
   margin-left: -30px;
   margin-top: -30px;
-  /*padding-bottom: 99px;*/
   flex-basis: calc(100% / 3-30px);
 }
 
@@ -419,25 +384,6 @@ ul {
   margin-left: 50px;
 }
 
-/*.mail {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  color: var(--title-text-color);
-  text-decoration: none;
-}
-
-.tel {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}*/
-
 /* our projects */
 
 .visually-hidden {
@@ -458,10 +404,9 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
-  /*margin-bottom: 30px;*/
+  margin-bottom: 30px;
   /*margin-bottom: 50px;*/
-  margin-bottom: 15px;
-  padding-bottom: 50px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -489,8 +434,43 @@ ul {
   background-color: var(--accent);
   border-color: var(--accent);
 }
-/*project-set*/
+
+.project-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  background-color: teal;
+}
+
+.project-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3-60px);
+  background-color: tomato;
+}
+
+/*1 вариант*/
+/*.project-item {
+  width: 370px;
+  background-color: tomato;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+*/
+
+/*project-set
 .our-projects .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
@@ -502,28 +482,42 @@ ul {
 .our-projects {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 .project-set {
   display: flex;
   flex-wrap: wrap;
-  /*margin-left: -30px;
-  margin-top: -30px;*/
-  margin: -15px;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: -30px;
+  background-color: tomato;
 }
 
 .project-item {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   width: 370px;
-  /*margin-left: 30px;
-  margin-top: 30px;*/
-  margin: 15px;
-  /*flex-basis: calc ((100%-60px)/3);*/
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+
   border: 1px solid #eeeeee;
 }
 
-/*.project-item:nth-child(3n) {
-  margin-right: 0px;
-}*/
+.project-item:nth-child(3n) {
+  margin-left: 0px;
+}
+*/
+.img-card {
+  display: block;
+}
+
 .card-body {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -571,6 +565,8 @@ footer .container {
   margin-left: auto;
   margin-right: auto;
   text-align: start;
+
+  background-color: var(--sec-background-color);
 }
 
 footer .logo {
