@@ -404,8 +404,8 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 30px;
-  /*margin-bottom: 50px;*/
+  padding-bottom: 50px;
+  padding-top: 94px;
 
   margin-left: auto;
   margin-right: auto;
@@ -435,21 +435,47 @@ ul {
   border-color: var(--accent);
 }
 
+/*2 вариант*/
+.our-projects .container {
+  width: 1200px;
+}
 .project-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  padding: 0;
+  list-style: none;
   background-color: teal;
 }
 
 .project-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3-60px);
+  width: 370px;
+  flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid #eeeeee;
   background-color: tomato;
 }
 
+.project-item:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
+/*.project-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.project-item:nth-child(3n + 1) {
+  margin-left: 0;
+}*/
+.img-card {
+  display: block;
+}
+
+.project-link {
+  display: block;
+}
 /*1 вариант*/
 /*.project-item {
   width: 370px;
@@ -514,9 +540,9 @@ ul {
   margin-left: 0px;
 }
 */
-.img-card {
+/*.img-card {
   display: block;
-}
+}*/
 
 .card-body {
   padding-top: 20px;
