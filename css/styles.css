@@ -404,8 +404,7 @@ ul {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-bottom: 50px;
-  padding-top: 94px;
+  margin-bottom: 50px;
 
   margin-left: auto;
   margin-right: auto;
@@ -414,6 +413,10 @@ ul {
 /*.our-projects .container {
   align-items: center;
 }*/
+
+.our-projects {
+  margin-top: 94px;
+}
 
 .filter {
   padding: 6px 22px;
@@ -444,7 +447,7 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding: 0;
+  margin-bottom: 94px;
   list-style: none;
   background-color: teal;
 }
